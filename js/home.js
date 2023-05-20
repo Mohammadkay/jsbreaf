@@ -14,3 +14,33 @@ if (techbtn !== null) {
     window.open("../technical.html", "_self");
   });
 }
+let infbtn = document.getElementById("infobtn");
+if (infbtn !== null) {
+  infbtn.addEventListener("click", function () {
+    console.log("hee");
+    window.open("../Info.Html"), "_self";
+  });
+}
+let finish = document.getElementById("finsh");
+let index = sessionStorage.getItem("index");
+if (arr[index].EnRuslt != null) {
+  engbtn.style.cssText = "opacity: 0.4;pointer-events: none;";
+}
+if (arr[index].techResult != null) {
+  techbtn.style.cssText = "opacity: 0.4;pointer-events: none;";
+}
+if (arr[index].phone != null) {
+  infbtn.style.cssText = "opacity: 0.4;pointer-events: none;";
+  console.log("open");
+}
+if (
+  infbtn.style.getPropertyValue("pointer-events") == "none" &&
+  techbtn.style.getPropertyValue("pointer-events") == "none" &&
+  engbtn.style.getPropertyValue("pointer-events") == "none"
+) {
+  finish.style.cssText = "opacity: 1;pointer-events:auto ;";
+  finish.textContent = "Your Report";
+}
+finish.addEventListener("click", function () {
+  window.open("../report.html", "_self");
+});

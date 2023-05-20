@@ -8,12 +8,12 @@
     <title>Report</title>
     <link rel="stylesheet" href="./css/report.css" />
   </head>
-  <body>
+  <body id="reportPage">
     <header>
       <nav>
-        <a href=""><img class="Logo" src="logo.png" alt="" /></a>
+        <a href=""><img class="Logo" src="Image/logo.png" alt="" /></a>
         <div class="continer-log">
-          <a href="#" id="LogOut">LogOut</a>
+          <button id="LogOut">LogOut</button>
         </div>
       </nav>
     </header>
@@ -24,11 +24,11 @@
         <div class="continer-circle">
           <div class="content">
             <h2>English Test</h2>
-            <div class="circle">10</div>
+            <div id="EnglishTest" class="circle">10</div>
           </div>
           <div class="content">
             <h2>Technical Test</h2>
-            <div class="circle">10</div>
+            <div id="TechnicalTest" class="circle">10</div>
           </div>
         </div>
         <h2>Thank You we will will contact you shortly</h2>
@@ -37,5 +37,8 @@
     <footer>
       <h4>©All Copyright Reserved For code Masters</h4>
     </footer>
+    <script src="./js/report.js" type="module"></script>
+    <script src="js/logout.js"></script>
+    <script src="./js/Register.js" type="module"></script>
   </body>
 </html>

@@ -358,7 +358,7 @@ export function que() {
       event.preventDefault();
     });
     $(".next").on("click", function (event) {
-      getValue();//get correct answer 
+      getValue(); //get correct answer
       event.preventDefault();
     });
   }
@@ -382,5 +382,5 @@ export function que() {
 }
 let ent = document.getElementById("engtest");
 if (ent !== null) {
-  ent.onload(que());
+  ent.addEventListener("load", que());
 }

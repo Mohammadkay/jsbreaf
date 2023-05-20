@@ -402,7 +402,7 @@ function techquiz() {
 
 let tech = document.getElementById("techquiz");
 if (tech !== null) {
-  tech.onload(techquiz());
+  tech.addEventListener("load", techquiz());
 }
 // function changeColor(){
 //   var selected_item = "";

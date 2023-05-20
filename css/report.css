@@ -6,7 +6,6 @@
   font-family: "Recursive", sans-serif;
 }
 
-
 :root {
   --container-forms: #31373b1e;
   --input: rgb(252, 252, 252);
@@ -24,6 +23,7 @@ body {
     rgba(246, 108, 177, 0.56) 0.47%,
     rgb(71 50 200 / 93%) 93.49%
   );
+  min-height: 100vh;
 }
 
 /*---------- Start Nav -------------------*/
@@ -140,7 +140,7 @@ h4 {
     flex-direction: column;
   }
   main {
-    height: 87.5vh;
+    height: 100.5vh;
   }
 }
 
